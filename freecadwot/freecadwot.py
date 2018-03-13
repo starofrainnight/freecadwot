@@ -2,6 +2,7 @@
 
 """Main module."""
 
+import sys
 from qtpy.QtCore import QTimer, QCoreApplication
 from qtpy.QtWidgets import QApplication
 from rabird.qt.application import InitMixin
