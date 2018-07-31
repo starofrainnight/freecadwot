@@ -3,8 +3,7 @@
 
 """Console script for freecadwot."""
 
-from .freecadwot import Application
-
+import os
 import click
 
 
@@ -12,8 +11,18 @@ import click
 def main(args=None):
     """Console script for freecadwot."""
 
+    # Django specific settings
+    os.environ.setdefault(
+        "DJANGO_SETTINGS_MODULE",
+        "freecadwot.djangodb.settings")
+    import django
+    django.setup()
+
+    from .freecadwot import Application
+
     app = Application()
     app.exec_()
+
 
 if __name__ == "__main__":
     main()
