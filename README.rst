@@ -4,24 +4,18 @@ freecadwot
 
 
 .. image:: https://img.shields.io/pypi/v/freecadwot.svg
-        :target: https://pypi.python.org/pypi/freecadwot
+    :target: https://pypi.python.org/pypi/freecadwot
 
-.. image:: https://img.shields.io/travis/starofrainnight/freecadwot.svg
-        :target: https://travis-ci.org/starofrainnight/freecadwot
+.. image:: https://travis-ci.org/starofrainnight/freecadwot.svg?branch=master
+    :target: https://travis-ci.org/starofrainnight/freecadwot
 
-.. image:: https://readthedocs.org/projects/freecadwot/badge/?version=latest
-        :target: https://freecadwot.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
-
-.. image:: https://pyup.io/repos/github/starofrainnight/freecadwot/shield.svg
-     :target: https://pyup.io/repos/github/starofrainnight/freecadwot/
-     :alt: Updates
-
+.. image:: https://ci.appveyor.com/api/projects/status/github/starofrainnight/freecadwot?svg=true
+    :target: https://ci.appveyor.com/project/starofrainnight/freecadwot
 
 FreeCAD Wiki Offline Translator
 
 
-* Free software: Apache-2.0
+* License: Apache-2.0
 * Documentation: https://freecadwot.readthedocs.io.
 
 

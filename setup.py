@@ -5,20 +5,21 @@
 
 from setuptools import setup, find_packages
 
-with open('README.rst') as readme_file, open('HISTORY.rst') as history_file:
+with open('README.rst', encoding='utf-8') as readme_file, \
+    open('HISTORY.rst', encoding='utf-8') as history_file:
     long_description = (readme_file.read() + "\n\n" + history_file.read())
 
-requirements = [
+install_requires = [
     'click>=6.0',
     # TODO: put package requirements here
 ]
 
-setup_requirements = [
+setup_requires = [
     'pytest-runner',
     # TODO(starofrainnight): put setup requirements (distutils extensions, etc.) here
 ]
 
-test_requirements = [
+tests_requires = [
     'pytest',
     # TODO: put package test requirements here
 ]
@@ -38,7 +39,7 @@ setup(
         ]
     },
     include_package_data=True,
-    install_requires=requirements,
+    install_requires=install_requires,
     license="Apache Software License",
     zip_safe=False,
     keywords='freecadwot',
@@ -46,12 +47,12 @@ setup(
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: Apache Software License',
-        'Natural Language :: English',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
     ],
     test_suite='tests',
-    tests_require=test_requirements,
-    setup_requires=setup_requirements,
+    tests_require=tests_requires,
+    setup_requires=setup_requires,
 )
