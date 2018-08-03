@@ -6,12 +6,12 @@
 from setuptools import setup, find_packages
 
 with open('README.rst', encoding='utf-8') as readme_file, \
-    open('HISTORY.rst', encoding='utf-8') as history_file:
+        open('HISTORY.rst', encoding='utf-8') as history_file:
     long_description = (readme_file.read() + "\n\n" + history_file.read())
 
 install_requires = [
     'click>=6.0',
-    # TODO: put package requirements here
+    'django',
 ]
 
 setup_requires = [
