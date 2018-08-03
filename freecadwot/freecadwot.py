@@ -10,7 +10,7 @@ from rabird.qt.application import InitMixin
 
 
 class Application(QApplication, InitMixin):
-    """
+    """Application of FreeCAD Wiki Offline Translator
     """
 
     def __init__(self, **kwargs):
