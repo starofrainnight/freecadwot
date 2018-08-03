@@ -12,6 +12,7 @@ with open('README.rst', encoding='utf-8') as readme_file, \
 install_requires = [
     'click>=6.0',
     'django',
+    'rabird.qt',
 ]
 
 setup_requires = [
