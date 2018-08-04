@@ -5,8 +5,8 @@
 import sys
 from qtpy.QtCore import QTimer, QCoreApplication
 from qtpy.QtWidgets import QApplication
-from qtpy.QtWidgets import QMainWindow
 from rabird.qt.application import InitMixin
+from .MainWindow import MainWindow
 
 
 class Application(QApplication, InitMixin):
@@ -16,5 +16,5 @@ class Application(QApplication, InitMixin):
     def __init__(self, **kwargs):
         super().__init__(sys.argv)
 
-        self._mainWindow = QMainWindow()
+        self._mainWindow = MainWindow()
         self._mainWindow.show()
